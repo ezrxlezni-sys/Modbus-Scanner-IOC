@@ -2,6 +2,10 @@ import board
 import time
 from umodbus.serial import Serial as ModbusRTUMaster
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
+
 # List of baudrates
 baudrates = [9600, 4800]
 
